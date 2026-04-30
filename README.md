@@ -24,7 +24,12 @@ Weather Diary — это графическое приложение для ве
 ## Требования для запуска
 
 - Python 3.8 или выше
-- Библиотека: `tkinter` (стандартная, устанавливается с Python)
+- Стандартные библиотеки (устанавливаются с Python):
+  - tkinter (для GUI)
+  - json (для работы с данными)
+  - datetime (для валидации дат)
+  - os (для работы с файловой системой)
+  - unittest (для тестирования)
 
 ---
 
@@ -34,9 +39,6 @@ Weather Diary — это графическое приложение для ве
 # Клонировать репозиторий
 git clone https://github.com/radmirhub/Weather-Diary-1.git
 cd Weather-Diary
-
-# Установить зависимости
-pip install -r requirements.txt
 
 # Запустить приложение
 python main.py
@@ -94,6 +96,7 @@ Weather-Diary/
 ├── requirements.txt     # Зависимости проекта
 ├── data.json            # Файл с сохранёнными данными (создаётся автоматически)
 ├── README.md            # Этот файл
+├── test_weather_diary.py # Тесты
 └── .gitignore           # Файл для игнорирования ненужных файлов в Git
 ```
 
